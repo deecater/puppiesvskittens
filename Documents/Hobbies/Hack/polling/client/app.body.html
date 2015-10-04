@@ -1,12 +1,17 @@
 <body>
 
   <div class="container">
+    <div class="row">
+      <div class="col-md-12"><h1>Puppies VS Kittens</h1></div>
+    </div>
   <!-- LOOP OVER POLLS AND SHOW EACH -->
-    <div class="polls">
+  <div class="row">
+      <div class="polls">
         {{ #each polls }}
             {{ >poll }}
         {{ /each }}
     </div>
+  </div>
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
         {{ >pollForm }}

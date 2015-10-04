@@ -2,10 +2,12 @@
 
 <div class="poll" data-id="{{ _id }}">
 
-    <h3>{{ question }}</h3>
+    <div class="col-md-12"><h3>{{ question }}</h3></div>
+<div class="col-md-2">&nbsp;</div>
 
     {{ #each indexedArray choices }}
-  <div class= "col-md-4"><img class ="poll-image" src="{{ url }}">
+
+<div class= "col-md-4"><img class ="poll-image" src="{{ url }}">
    {{#if ifPuppy @index}}
     Puppy
     {{else}}
@@ -15,7 +17,7 @@
             <span class="votes pull-right">{{ votes }}</span>
         </a>
   </div>
-    {{ /each }}
+   {{ /each }}
 
 </div>
 </template>
