@@ -7,13 +7,16 @@
 
     {{ #each indexedArray choices }}
 
-<div class= "col-md-4"><img class ="poll-image" src="{{ url }}">
+<div class= "col-md-4">
+  <a href="#" class="vote" data-id="{{ _index }}">
+  <img class ="poll-image" src="{{ url }}">
    {{#if ifPuppy @index}}
-    Puppy
+   <img src="http://www.deecater.com/images/woodchipper.png" class="poll-image" id="woodchipperpuppy" style="margin-top:-300px; display:none">
+    Vote for Puppy
     {{else}}
-    Kitten
+    <img src="http://www.deecater.com/images/woodchipper.png" class="poll-image" id="woodchipperkitten" style="margin-top:-300px; display: none">
+    Vote for Kitten
     {{/if}}
-        <a href="#" class="vote" data-id="{{ _index }}">
             <span class="votes pull-right">{{ votes }}</span>
         </a>
   </div>

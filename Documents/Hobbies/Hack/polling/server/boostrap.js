@@ -6,7 +6,7 @@ Meteor.startup(function() {
     // create sample polls
     var samplePolls = [
       {
-        question: 'Is Meteor awesome?',
+        question: 'You can only save one! Which will it be?',
         choices: [
           { url: 'https://upload.wikimedia.org/wikipedia/commons/c/c7/Puppy_on_Halong_Bay.jpg', votes: 0 },
           { url: 'http://dreamatico.com/data_images/kitten/kitten-2.jpg', votes: 0},
