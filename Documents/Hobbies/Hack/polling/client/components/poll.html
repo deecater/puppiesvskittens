@@ -1,0 +1,21 @@
+<template name="poll">
+
+<div class="poll" data-id="{{ _id }}">
+
+    <h3>{{ question }}</h3>
+
+    {{ #each indexedArray choices }}
+  <div class= "col-md-4"><img class ="poll-image" src="{{ url }}">
+   {{#if ifPuppy @index}}
+    Puppy
+    {{else}}
+    Kitten
+    {{/if}}
+        <a href="#" class="vote" data-id="{{ _index }}">
+            <span class="votes pull-right">{{ votes }}</span>
+        </a>
+  </div>
+    {{ /each }}
+
+</div>
+</template>
